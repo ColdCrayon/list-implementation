@@ -71,7 +71,7 @@ public class LinkedList {
         }
 
         Node curr = this.first;
-        for (int i = 1; i <= index; i++) {
+        for (int i = 0; i < index; i++) {
             curr = curr.next;
         }
 
@@ -85,14 +85,26 @@ public class LinkedList {
      * @return the element at <code>index</code>
      */
     public int remove(int index) {
+        if (index >= size()) {
+            return -1;
+        }
+
         Node curr = this.first;
+        int value = 0;
+
+        if (index == 0) {
+            value = this.first.value;
+            this.first = curr.next;
+        }
 
         for (int i = 1; i < index - 1; i++) {
             curr = curr.next;
         }
 
-        int value = curr.next.value;
-        curr.next = curr.next.next;
+        if (curr.next != null) {
+            value = curr.next.value;
+            curr.next = curr.next.next;
+        }
 
         return value;
     }
