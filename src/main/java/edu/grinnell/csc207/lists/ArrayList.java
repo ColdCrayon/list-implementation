@@ -39,6 +39,10 @@ public class ArrayList {
      * @return the value at the specified <code>index</code>
      */
     public int get(int index) {
+        if (index >= size()) {
+            return -1;
+        }
+
         return this.data[index];
     }
 
@@ -49,6 +53,11 @@ public class ArrayList {
      * @return the element at <code>index</code>
      */
     public int remove(int index) {
+        if (index >= size()) {
+            return -1;
+        }
+
+        int removed = get(index);
         int[] arr1 = Arrays.copyOf(this.data, index);
         int[] arr2 = Arrays.copyOfRange(data, index + 1, size);
 
@@ -62,6 +71,9 @@ public class ArrayList {
             result[index + i] = arr2[i];
         }
 
-        return 0;
+        this.data = result;
+        this.size--;
+
+        return removed;
     }
 }
