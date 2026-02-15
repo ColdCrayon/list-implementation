@@ -16,6 +16,7 @@ public class ArrayList {
 
     /**
      * Adds <code>value</code> to the end of the list
+     * Runtime: O(n) copyOf increases with the size of array
      * 
      * @param value the value to add to the end of the list
      */
@@ -28,6 +29,8 @@ public class ArrayList {
     }
 
     /**
+     * Runtime: O(1)
+     * 
      * @return the number of elements in the list
      */
     public int size() {
@@ -35,6 +38,8 @@ public class ArrayList {
     }
 
     /**
+     * Runtime: O(1)
+     * 
      * @param index the index of the element to retrieve
      * @return the value at the specified <code>index</code>
      */
@@ -48,6 +53,7 @@ public class ArrayList {
 
     /**
      * Removes the value at <code>index</code> from the list
+     * Runtime: O(n)
      * 
      * @param index the index of the element to remove
      * @return the element at <code>index</code>

@@ -2,8 +2,6 @@ package edu.grinnell.csc207.lists;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
 
 import net.jqwik.api.ForAll;
