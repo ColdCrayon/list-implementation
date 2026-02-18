@@ -1,6 +1,6 @@
 # List Implementation lab
 
-Authors: (_TODO: fill in names here!_)
+Authors: Ella Tobben, Cadel Saszik 
 
 ## Build commands
 
@@ -10,6 +10,6 @@ Authors: (_TODO: fill in names here!_)
 
 ## Resources
 
-*   (_TODO: fill in resources here!_)
-*   ...
-*   ...
+*   https://osera.cs.grinnell.edu/ttap/data-structures-labs/list-implementation.html
+   *   Referenced the given code from above lab for test formatting/syntax
+*   https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
